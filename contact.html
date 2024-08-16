@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Futuristic Cyber Security Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Animated Background -->
+    <div class="background"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <section id="contact" class="parallax">
+        <div class="content">
+            <h1 class="glow">Contact Me</h1>
+            <p class="intro-text">Get in touch for collaborations, inquiries, or just to say hello!</p>
+
+            <form action="send-message.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Prismatic Hat. All rights reserved.</p>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fab">
+        <a href="#contact"><i class="fa fa-envelope"></i></a>
+    </div>
+
+    <!-- Audio Caption -->
+    <audio id="contact-audio" src="audio/contact-caption.mp3" preload="auto"></audio>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('contact-audio');
+            audio.play();
+        });
+    </script>
+</body>
+</html>

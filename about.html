@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Prismatic Hat Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Animated Background -->
+    <div class="background"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <section id="about" class="parallax">
+        <div class="content fade-in">
+            <h1 class="glow">About Me</h1>
+            <p class="intro-text">I'm Prismatic Hat, a cyber security specialist committed to protecting digital landscapes. My expertise spans across multiple domains in the cyber world, ensuring the safety and integrity of data and networks.
+                Here's some information about my background in cyber security.</p>
+        </div>
+    </section>
+
+    <!-- Audio Element for Welcome Message -->
+    <audio id="about-audio" src="audio/about.mp3"></audio>
+
+    <!-- Other Sections... -->
+
+    <footer>
+        <p>&copy; 2024 Prismatic Hat. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Play the about audio when the page loads
+        window.onload = function() {
+            const audio = document.getElementById('about-audio');
+            audio.play();
+        };
+    </script>
+</body>
+</html>

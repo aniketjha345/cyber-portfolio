@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Futuristic Cyber Security Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Animated Background -->
+    <div class="background"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <section id="blog" class="parallax">
+        <div class="content">
+            <h1 class="glow">My Cyber Security Blog</h1>
+            <p class="intro-text">"Welcome to my blog. Here, I share insights, updates, and deep dives into the world of cyber security. Stay tuned for the latest trends and analyses."</p>
+
+            <!-- Blog Posts List -->
+            <div class="blog-posts">
+                <article class="blog-post">
+                    <h2>Blog Post Title 1</h2>
+                    <p>Excerpt or summary of blog post 1.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article class="blog-post">
+                    <h2>Blog Post Title 2</h2>
+                    <p>Excerpt or summary of blog post 2.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article class="blog-post">
+                    <h2>Blog Post Title 3</h2>
+                    <p>Excerpt or summary of blog post 3.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <!-- Add more blog posts as needed -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Prismatic Hat. All rights reserved.</p>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fab">
+        <a href="#contact"><i class="fa fa-envelope"></i></a>
+    </div>
+
+    <!-- Audio Caption -->
+    <audio id="blog-audio" src="audio/blog-caption.mp3" preload="auto"></audio>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('blog-audio');
+            audio.play();
+        });
+    </script>
+</body>
+</html>
